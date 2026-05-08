@@ -10,10 +10,7 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 
 @bot.event
 async def on_ready():
-    print("bot onn {bot.user}")
-
-
-
+    print(f"bot onn {bot.user}")
 
 @bot.event
 async def on_command_error(ctx, error):
